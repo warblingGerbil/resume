@@ -7,43 +7,40 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
   <style>
-
+    /* Two-column grid */
     .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
     }
 
+    /* Make all project cards equal height */
+    .project {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%;
+    }
 
+    /* Image styling with black glow */
     .project img {
       width: 100%;
       border-radius: 8px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.9);
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+      margin-bottom: 0.5rem;
     }
 
-    .project h2 {
-      margin-top: 0.5rem;
-    }
-
+    /* Softer black glow on links */
     .project a {
-      color: #0077cc;
+      color: #000;
       text-decoration: none;
+      font-weight: 600;
+      text-shadow: 0 0 4px rgba(0,0,0,0.6);
     }
 
     .project a:hover {
-      text-decoration: underline;
+      text-shadow: 0 0 7px rgba(0,0,0,0.9);
     }
-    .project a {
-  color: #000;
-  text-decoration: none;
-  font-weight: 600;
-  text-shadow: 0 0 6px rgba(0,0,0,0.8);
-}
-
-.project a:hover {
-  text-shadow: 0 0 10px rgba(0,0,0,1);
-}
-
   </style>
 </head>
 
