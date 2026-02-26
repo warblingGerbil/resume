@@ -12,11 +12,20 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 20;
+
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
 
     .penguin-overlay img {
-      width: 180px;
-      height: auto;
+      height: 180px;
+      width: auto;
+    }
+
+    .penguin-overlay .side-img {
+      height: 140px;
+      width: auto;
     }
   </style>
 </head>
@@ -40,7 +49,9 @@
   </div>
 
   <div class="penguin-overlay">
-    <img src="Smaller Penguin Pic.png" alt="Penguin">
+    <img src="shadowBlade.png" class="side-img left" alt="Shadow Blade">
+    <img src="Smaller Penguin Pic.png" class="penguin" alt="Penguin">
+    <img src="ninja.png" class="side-img right" alt="Ninja">
   </div>
 </body>
 </html>
